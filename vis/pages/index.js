@@ -1,5 +1,5 @@
-import { useEffect, useRef } from "react";
-import dynamic from 'next/dynamic'
+import { useEffect, useRef } from "react"
+import styles from '../styles/index.module.scss'
 
 
 export default function index() {
@@ -19,7 +19,7 @@ export default function index() {
   }, [ref.current])
   return (
     <article>
-      <h1>COVID19 - IGV</h1>
+      <h1 className={styles.test} >COVID19 - IGV</h1>
       <div ref={ref}></div>
     </article>
   )
